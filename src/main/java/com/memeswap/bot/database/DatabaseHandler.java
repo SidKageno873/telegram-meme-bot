@@ -12,9 +12,9 @@ import java.util.Map;
 
 public class DatabaseHandler {
     private static final Logger logger = LoggerFactory.getLogger(DatabaseHandler.class);
-    private static final String URL = "jdbc:postgresql://localhost:5432/memeswap";
-    private static final String USER = "your_username";
-    private static final String PASSWORD = "your_password";
+    private static final String URL = System.getenv("DATABASE_URL");
+    private static final String USER = "meme_swap_92g2_user";
+    private static final String PASSWORD = "fHbjtgu7MmcqXFigQJwwFFjxsQdqAHNN";
 
     public static Connection getConnection() throws SQLException {
         return DriverManager.getConnection(URL, USER, PASSWORD);

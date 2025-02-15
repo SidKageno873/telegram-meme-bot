@@ -783,6 +783,6 @@ public class MemeSwagBot extends TelegramLongPollingBot {
 
     @Override
     public String getBotToken() {
-        return "7937990194:AAHedzejkuIflo9yfP8G7l7KBcOVDqJkzIw"; // Замените на ваш токен
+        return System.getenv("BOT_TOKEN");
     }
 }
