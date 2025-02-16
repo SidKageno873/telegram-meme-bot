@@ -16,7 +16,7 @@ public class Main {
             botsApi.registerBot(new MemeSwagBot());
 
             // Запуск обработчика команд консоли
-            new Thread(new ConsoleCommandHandler()).start();
+            //new Thread(new ConsoleCommandHandler()).start();
 
             System.out.println("Бот успешно запущен!");
         } catch (TelegramApiException e) {

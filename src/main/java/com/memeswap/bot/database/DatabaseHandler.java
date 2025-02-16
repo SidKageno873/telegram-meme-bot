@@ -14,7 +14,7 @@ public class DatabaseHandler {
     private static final Logger logger = LoggerFactory.getLogger(DatabaseHandler.class);
     private static final String URL = System.getenv("DATABASE_URL");
     private static final String USER = "meme_swap_92g2_user";
-    private static final String PASSWORD = "fHbjtgu7MmcqXFigQJwwFFjxsQdqAHNN";
+    private static final String PASSWORD = "yOeFY2UKD7ChqG5K0re4cGA6vBlTdlOx";
 
     public static Connection getConnection() throws SQLException {
         return DriverManager.getConnection(URL, USER, PASSWORD);
